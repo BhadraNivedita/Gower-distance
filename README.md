@@ -43,9 +43,27 @@ df$numeric_var <- (df$numeric_var - mean_numeric_var) / range_numeric_var
 
 # convert categorical variable to binary
 df$categorical_var <- ifelse(df$categorical_var == "A", 1, 0)
+
+
+# convert binary variable to binary
+df$binary_var <- as.numeric(df$binary_var)
+
+```
+Bith daisy function and gower.dist function calculates gower's distance matrix. 
+```
+library(cluster)
+daisy.mat <- as.matrix(daisy(df, metric="gower"))
+
+library(StatMatch)
+gower.mat <- gower.dist(df)
 ```
 
-
+One can check if they produce differnet results.
+```
+head(daisy.mat, 3)
+head(gower.mat, 3)
+#identical(daisy.mat, gower.mat)
+```
 
 
 
