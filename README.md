@@ -49,7 +49,7 @@ df$categorical_var <- ifelse(df$categorical_var == "A", 1, 0)
 df$binary_var <- as.numeric(df$binary_var)
 
 ```
-Bith daisy function and gower.dist function calculates gower's distance matrix. 
+Both daisy function and gower.dist function calculates gower's distance matrix. 
 ```
 library(cluster)
 daisy.mat <- as.matrix(daisy(df, metric="gower"))
