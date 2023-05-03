@@ -22,7 +22,7 @@ Advantage of this method is it is intuitive to understand and pretty straightfor
 
 
 
-##References: Gower, J. C. (1971), “A general coefficient of similarity and some of its properties”. Biometrics, 27, 623–637.
+### References: Gower, J. C. (1971), “A general coefficient of similarity and some of its properties”. Biometrics, 27, 623–637.
 
 
 
