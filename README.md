@@ -16,6 +16,11 @@ Nominal: variables of k categories are first converted into k binary columns and
 
 Advantage of this method is it is intuitive to understand and pretty straightforward to calculate.However, this method is sensitive to non-normality and outliers present in continuous variables and hence, appropriate transformations as a pre-processing step might be necessary. Besides, it can be computationally intensive for large samples as itrequires an NxN distance matrix to be calculated.
 
+Let's try an example. There are two popular R functions from Cluster and Statmatch packages which can calculate Gower's distance.
+
+
+
+
 
 
 
