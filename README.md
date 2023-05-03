@@ -19,6 +19,20 @@ Advantage of this method is it is intuitive to understand and pretty straightfor
 Let's try an example. There are two popular R functions from Cluster and Statmatch packages which can calculate Gower's distance.
 
 
+```
+# Create example data
+set.seed(123)
+
+# create a sample data frame with mixed data types
+df <- data.frame(
+  numeric_var = c(1,2,3,4),
+  categorical_var = c("Ni", "V", "E", "C"),
+  binary_var = c(0,1,0,1)
+)
+
+```
+
+
 
 
 
